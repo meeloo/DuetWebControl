@@ -77,7 +77,7 @@ if (!pluginManifest.dwcVersion) {
 if (pluginDir.startsWith(dwcPluginDir)) {
 	// Check whether the plugin IDs match
 	if (pluginManifest.id !== param) {
-		error("Plugin id must match the parameter");
+		error("Plugin id " + pluginManifest.id + " must match the parameter " + param);
 		return 1;
 	}
 } else {

@@ -6,6 +6,16 @@ import DwcPlugin from "./DwcPlugin";
 
 export default initCollection(DwcPlugin, [
 	{
+        id: "CNCProbeSeb",
+        name: "CNCProbeSeb",
+        author: "CNCProbeSeb",
+        version: "3.6.0-beta.2+1",
+        loadDwcResources: () => import(
+            /* webpackChunkName: "CNCProbeSeb" */
+            "./CNCProbeSeb/index"
+        )
+    },
+	{
         id: "GCodeViewer",
         name: "G-Code Viewer",
         author: "Juan Rosario",
